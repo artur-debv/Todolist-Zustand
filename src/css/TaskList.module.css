@@ -1,0 +1,114 @@
+:root{
+    --neutral-100:#F0ECE5;
+    --neutral-200:#B6BBC4;
+    --neutral-300:#31304D;
+    --neutral-400:#161A30;
+    --green-100:  #00FFAB;
+}
+
+body{
+    background-color: var(--neutral-400);
+    color: var(--neutral-100);
+}
+
+.container{
+    width: 100%;
+    max-width: 480px;
+    padding: 32px 24px;
+    margin: 0 auto;
+}
+
+.title{
+    color: var(--green-100);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task {
+    margin-bottom: 16px; /* Espaçamento entre as tarefas */
+    padding: 8px;
+    background-color: var(--neutral-300);
+    border-radius: 4px; /* Cantos arredondados */
+    color: var(--neutral-100);
+    display: flex;
+    justify-content: space-between; /* Alinha o texto e o botão de remoção */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.inputcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+input{
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: var(--neutral-300);
+    color: var(--green-100);
+    width: 100%;
+}
+
+input::placeholder{
+    color: var(--neutral-200);
+}
+
+p{
+    text-align: center;
+}
+
+.button{
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: var(--green-100);
+    color: var(--neutral-400);
+    margin-left: 8px;
+    transition: filter 150ms;
+}
+
+.deleteButton {
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #FF4C4C; /* Vermelho para indicar exclusão */
+    color: var(--neutral-100); /* Cor do texto */
+    margin-left: 8px;
+    transition: filter 150ms, transform 150ms;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    filter: brightness(0.85); /* Suaviza o botão ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.deleteButton:active {
+    transform: scale(0.95); /* Feedback visual ao clicar */
+    filter: brightness(0.7);
+}
+
+
+button:hover{
+    filter: brightness(0.75)
+}
